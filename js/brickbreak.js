@@ -1,3 +1,6 @@
+// Copyright (C) 2009 John H. Palevich. All Rights Reserved.
+// Modified by Austin Meyers (AK5A) for PulsedLight Inc. 03/28/15. Happy Arduino Day 2015!
+
 var livesPerGame = 3;
 
 var lives = 0;

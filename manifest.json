@@ -1,7 +1,7 @@
 {
-  "name": "LIDAR-Lite Compass Test",
+  "name": "LIDAR-Lite Brick Breaker",
   "version": "1",
-  "manifest_version": 3,
+  "manifest_version": 1,
   "permissions": ["serial","storage"],
   "minimum_chrome_version": "23",
   "icons": {
