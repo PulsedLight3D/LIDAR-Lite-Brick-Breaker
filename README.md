@@ -1,12 +1,21 @@
 # LIDAR-Lite Brick Breaker
 
-Play the exciting Atari classic as a Chrome standalone app with a wave of your hand via LIDAR-Lite and Arduino. Big thanks to [Jack Palevich](https://github.com/jackpal/jackshacks/tree/gh-pages/brickbreak) for the original Brick-Break JS. 
+Play the exciting Atari classic as a Chrome standalone app with a wave of your hand via LIDAR-Lite and Arduino. [See a quick video of it in action!](https://youtu.be/7yKE1Mw-p8E)
+
 
 Very much a hack for Arduino Day 2015, its not as well commented as would be desireable. That said, PulsedLight has more Chrome App experiments planned and we'll be using this basic setup with better commenting in the future. 
 
 If anyone tries this out and decides to make a video of it, we'd love to see it!
 
 Enjoy!
+
+## Credits
+
+Big thanks to [Jack Palevich](https://github.com/jackpal/jackshacks/tree/gh-pages/brickbreak) for the original Brick-Break JS. 
+
+Also, the font used throughout this app is <a href="http://www.fontsquirrel.com/fonts/Silkscreen">Silkscreen by Jason Kottke</a>. A favorite!
+
+And always, thank you to the Chrome and DSS Circuits team for the amazing libraries!
 
 ## Setup
 
