@@ -1,19 +1,35 @@
-# plPointCloud_w_LSM3030
-3d point cloud design with LIDAR-Lite and LSM3030 by Adafruit
+# LIDAR-Lite Brick Breaker
 
-This is a crazy rough first round, about 1.5 hrs of work... many more to come, but its kinda fun!
+Play the exciting Atari classic as a Chrome standalone app with a wave of your hand via LIDAR-Lite and Arduino. Big thanks to [Jack Palevich](https://github.com/jackpal/jackshacks/tree/gh-pages/brickbreak) for the original Brick-Break JS. 
+
+## Setup
+
+![LIDAR-Lite Brick Breaker Diagram](http://pulsedlight3d.net/assets.pl3d//LIDARLite-BrickBreakerDiagram.png)
+
+Connect the LIDAR-Lite to the Arduino according to the diagram below. Then plug the Arduino into the computer with the LIDAR-Lite on the left side of the computer. 
+
+## Arduino Setup
+
+![arduino-screenshot](http://pulsedlight3d.net/assets.pl3d/arduino-setup.png)
+
+### LIDARLite I2C Connection Setup
+LIDARLite Cable | Arduino Pins
+:---|:---
+5V | 5V
+PWR EN | _(Unused)_
+MODE | _(Unused)_
+SCL | SCL (topmost pin on the right hand side of Arduino)
+SDA | SDA (second pin from the top on the right hand side of Arduino)
+GND | GND
 
 ## Installation
 
 ### Arduino
-The Arduino code is in the ```/arduino``` folder. Load it normally. Because I've just cobbled this together, it requires all of these libraries:
+The Arduino code is in the ```/arduino``` folder. Load it normally. 
 
-- [https://github.com/adafruit/Adafruit_LSM303DLHC]()
-- [https://github.com/adafruit/Adafruit_Sensor]()
-- Wire
-- I2C Master Library
+It requires the'Arduino I2C Master Library' from DSS Circuits: [http://www.dsscircuits.com/index.php/articles/66-arduino-i2c-master-library](). 
 
-Future versions will only required the I2C master libary
+Information about installing libraries can be found: [http://arduino.cc/en/Guide/Libraries]()
 
 ### Chrome
 1. Go to ```chrome://extensions``` 
@@ -25,13 +41,4 @@ Future versions will only required the I2C master libary
 
 ## Usage
 
-1. Once you've selected the serial port and you see the canvas view with the "Clear Canvas" button at the top, you should start to see black dots appear. 
-2. As you move the **entire arduino board** around you'll see the dots move around the screen. 
-3. Wave it around and you'll see some rudimentary cloud point mapping
-
-## Explanation
-
-Basically what's happening is:
-
-- The darkness of the dot is determined by the closeness of the distance reading, an object of 13 cm will produce a darker dot than one of 113cm. 
-- I'm not sure I have the axis correct or even if I'm even using the right feedback from the LSM3030 sensor, but hell it kinda did something reliably and so I haven't investigated further yet. 
+After installation, placed the LIDAR-Lite on the left side of the computer and launch the Chrome app. Follow the directions in the app. 
